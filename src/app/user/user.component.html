@@ -1,0 +1,13 @@
+<p>user works!</p>
+<p>landing-page works!</p>
+<div *ngIf = "users.length === 0">
+    <p>
+        No hay nada
+    </p>
+</div>
+
+<div *ngFor="let user of users">
+    <p>
+        {{user.name}}
+    </p>
+</div>

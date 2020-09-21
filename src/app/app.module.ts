@@ -9,6 +9,11 @@ import { DashaboardComponent } from './dashaboard/dashaboard.component';
 
 import {HttpClientModule} from '@angular/common/http';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { OrderUpComponent } from './order-up/order-up.component';
+import { ProductComponent } from './product/product.component';
+import { ProviderComponent } from './provider/provider.component';
+import { SaleComponent } from './sale/sale.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     LoginComponent,
     RegisterComponent,
     DashaboardComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    OrderUpComponent,
+    ProductComponent,
+    ProviderComponent,
+    SaleComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
