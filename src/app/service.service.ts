@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http'
 })
 export class ServiceService {
 
-  private REST_API_SERVER = "http://localhost:9003/";
+  private REST_API_SERVER = "http://localhost:3000/";
 
   constructor(private httpclient : HttpClient ) { }
 
