@@ -1,0 +1,29 @@
+.center {
+    text-align: center;
+    width: 50%;
+    height: 50%;
+}
+
+.body {
+    max-width: 320px;
+    /* width: 90%; */
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 4px;
+    color: #505e6c;
+    /* box-shadow: 1px 1px 5px rgba(0,0,0,0.1); */
+}
+
+.ilustration {
+    text-align: center;
+    padding: 0 0 20px;
+    font-size: 100px;
+    color: rgb(244,71,107);
+}
+
+.btn btn-primary {
+    width: 100%;
+    margin: auto;
+    
+}

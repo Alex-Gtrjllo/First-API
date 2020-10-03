@@ -1,0 +1,33 @@
+.img {
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+.body{
+    background-image: url("../../assets/Img/fondo3.jpg");
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-size: cover;
+    align-items: center;
+    position: relative;
+    padding: 134px 134px;
+    height: 100%;
+    width: 100%;
+}
+
+.label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: greenyellow;
+}
+
+.label2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: greenyellow;
+    margin-left: 200px;
+    margin-right: 10px;
+}
+
+.button {
+    margin-right: 100px;
+}

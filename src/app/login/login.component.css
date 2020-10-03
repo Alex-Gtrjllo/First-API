@@ -1,5 +1,36 @@
-.center {
+
+.body-login {    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/Img/fondo.png");
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding: 134px 134px;
+
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    margin: 0px auto 5px;
+    display: block;
+}
+
+.button {
     text-align: center;
-    width: 50%;
-    height: 50%;
+    margin: 10px;
+}
+
+.contenedor {
+  width: 400px;
+  height: 600px;
+  padding: 60px 40px 80px;
+  position: relative;
+  align-items: center;
+  background-color: white;
 }
