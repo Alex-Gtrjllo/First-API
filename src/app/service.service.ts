@@ -4,9 +4,10 @@ import { HttpClient } from '@angular/common/http'
 @Injectable({
   providedIn: 'root'
 })
+
 export class ServiceService {
 
-  private REST_API_SERVER = "http://localhost:3000/";
+  private REST_API_SERVER = "http://localhost:8000/api/v1/profile/profileUser_url";
 
   constructor(private httpclient : HttpClient ) { }
 

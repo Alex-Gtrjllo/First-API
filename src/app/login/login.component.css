@@ -7,10 +7,14 @@
     align-items: center;
     background-image: url("../../assets/Img/fondo.png");
     background-repeat: no-repeat; 
-    background-position: center center;
+    background-position: center center fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     position: relative;
-    padding: 134px 134px;
+    padding: .5%;
+    /* padding: 134px 134px; */
 
 }
 

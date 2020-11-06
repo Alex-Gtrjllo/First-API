@@ -21,6 +21,25 @@ import { InicioComponent } from './inicio/inicio.component';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { AngularFirestoreModule} from '@angular/fire/firestore';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatDialogModule} from '@angular/material/dialog';
+
+
+
+
+
+// Importación para los formularios
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormComponent } from './form/form.component';
+import { EditComponent } from './edit/edit.component';
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
@@ -40,14 +59,30 @@ import { AngularFirestoreModule} from '@angular/fire/firestore';
     HeaderComponent,
     DashboardComponent,
     SigninComponent,
-    InicioComponent
+    InicioComponent,
+    FormComponent,
+    EditComponent
   ],
   imports: [
+    MatFormFieldModule,
+    MatToolbarModule,
+    MatSliderModule,
+    MatTableModule,
+    MatInputModule,
+    MatButtonModule,
+    MatCardModule,
+    MatIconModule,
+    // Modulos de formularios
+    FormsModule,
+    ReactiveFormsModule,
+    //
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     AngularFirestoreModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    BrowserAnimationsModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

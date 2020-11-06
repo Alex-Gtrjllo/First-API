@@ -1,0 +1,41 @@
+<div mat-dialog-content>
+    <form class="add-form" [formGroup]="loginFormGroup">
+        <p>
+            <mat-form-field appearance="legacy">
+                <mat-label>Nombre</mat-label>
+                <input matInput placeholder="Nombre" formControlName="name">
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="standard">
+                <mat-label>Apellidos</mat-label>
+                <input matInput placeholder="Apellidos" formControlName="surnames">
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Edad</mat-label>
+                <input matInput placeholder="Edad" formControlName="age">
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Email" formControlName="email">
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+        </p>
+
+        
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button id="basic" type="button" mat-raised-button (click)="putUser()" >
+        Agregar
+    </button>
+
+    <button mat-raised-button >Cancelar</button>
+</div>

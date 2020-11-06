@@ -1,16 +1,4 @@
-.body {
-    background-image: url("../../assets/Img/fondo2.jpg") ;
-    background-repeat: no-repeat; 
-    background-position: center center;
-    background-size: cover;
-    align-items: center;
-    position: relative;
-    padding: 134px 134px;
-    height: 100%;
+table {
     width: 100%;
-}
-
-.label {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: greenyellow;
-}
+  }
+  
