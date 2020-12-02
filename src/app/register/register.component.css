@@ -4,14 +4,14 @@
     display: block;
 }
 
-.body{
+.body-login{
     background-image: url("../../assets/Img/fondo3.jpg");
     background-repeat: no-repeat; 
     background-position: center center;
     background-size: cover;
     align-items: center;
     position: relative;
-    padding: 134px 134px;
+    padding: .5%;
     height: 100%;
     width: 100%;
 }
@@ -28,6 +28,13 @@
     margin-right: 10px;
 }
 
-.button {
+.button-login {
     margin-right: 100px;
+}
+
+.cart {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,38 +1,93 @@
-<div class="body">
-    <div class="img" style="width: 16rem;">
-        <img src="./assets/Img/logo4.png" class="card-img-top" alt="...">
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="body-login">
+        <div class="img" style="width: 16rem;">
+            <img src="./assets/Img/logo4.png" class="card-img-top" alt="...">
+        </div>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="label" for="inputEmail4">Usuario</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="label" for="inputEmail3">Nombre completo</label>
+                    <input type="email" class="form-control" id="inputPassword4">
+                </div>
+            </div>
+        </form>
+
+        <form>
+            <div class="form-group">
+                <label class="label" for="exampleInputEmail1">Dirección Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label class="label" for="exampleInputPassword1">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="button-login">
+                <button type="submit" class="btn btn-primary">Register</button>
+                <label class="label2" for="">¿Ya estas registrado?</label>
+                <button type="button" routerLink="/login-component" class="btn btn-outline-success">Login</button>
+            </div>
+
+            <div class="button">
+
+            </div>
+        </form>
     </div>
-    <form>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label class="label" for="inputEmail4">Usuario</label>
-                <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="form-group col-md-6">
-                <label class="label" for="inputEmail3">Nombre completo</label>
-                <input type="email" class="form-control" id="inputPassword4">
-            </div>
-        </div>
+</body>
+
+</html> -->
+
+<mat-card class="cart">
+    <form class="add-form" [formGroup]="RegisterFormGroup">
+        <p>
+            <mat-form-field appearance="legacy">
+                <mat-label>Usuario</mat-label>
+                <input matInput placeholder="Usuario" formControlName="username">
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="standard">
+                <mat-label>Contraseña</mat-label>
+                <input matInput placeholder="Contraseña1" formControlName="password1">
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="standard">
+                <mat-label>Confirmar Contraseña</mat-label>
+                <input matInput placeholder="Contraseña2" formControlName="password2">
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Email" formControlName="email">
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+        </p>
+
+
+        <button id="basic" type="button" mat-raised-button routerLink="/login-component" (click)="postUser()">
+            Agregar
+        </button>
+
+        <button mat-raised-button routerLink="/login-component">Cancelar</button>
     </form>
 
-    <form>
-        <div class="form-group">
-            <label class="label" for="exampleInputEmail1">Dirección Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-            <label class="label" for="exampleInputPassword1">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="button">
-            <button type="submit" class="btn btn-primary">Register</button>   
-            <label class="label2" for="">¿Ya estas registrado?</label>
-            <button type="button" routerLink="/login-component" class="btn btn-outline-success">Login</button>        
-        </div>
-
-        <div class="button">
-            
-        </div>
-    </form>
-</div>
+</mat-card>

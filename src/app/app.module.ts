@@ -30,6 +30,7 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDialogModule} from '@angular/material/dialog';
+import { CookieService } from 'ngx-cookie-service';
 
 
 
@@ -84,7 +85,7 @@ import { EditComponent } from './edit/edit.component';
     BrowserAnimationsModule,
     MatDialogModule,
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

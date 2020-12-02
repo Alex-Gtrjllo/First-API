@@ -11,9 +11,9 @@ import { Observable } from 'rxjs';
 
 
 export class AuthService {
-  api: String = 'https://back-web-ids-193262.herokuapp.com/';
+  api: String = 'http://web-alexis.ddns.net/';
 
-  constructor(private httpClient: HttpClient, private afAuth: AngularFireAuth ) { }
+  constructor( private httpClient: HttpClient, private afAuth: AngularFireAuth ) { }
 
   public isAuthenticated (): boolean{
     let user = JSON.parse(localStorage.getItem('user'));
@@ -87,6 +87,15 @@ export class AuthService {
       })
     }
     return this.httpClient.post(`${this.api}api/v1/profile/profileUser_url`,{name, surnames, age, email}, httpOptions);
+  }
+
+  postUsuario(username:String, email:String, password1:String, password2:String){
+    const httpOptions = {
+      headers : new HttpHeaders ({
+        'Content-Type' : 'application/json',
+      })
+    }  
+    return this.httpClient.post(`${this.api}api/v1/User/User_url`,{username, email, password1, password2}, httpOptions);
   }
 
   public login() {    
